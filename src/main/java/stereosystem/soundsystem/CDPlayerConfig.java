@@ -5,6 +5,6 @@ import org.springframework.context.annotation.*;
  * Created by Fun on 2017/5/10.
  */
 @Configuration
-@ComponentScan
+@ComponentScan(basePackageClasses = CDPlayerConfig.class)
 public class CDPlayerConfig {
 }
