@@ -15,7 +15,7 @@ public class TrackCounter {
 
     private Map<Integer, Integer> trackCounts = new HashMap<Integer, Integer>();
 
-    @Pointcut("execution(* stereosystem.soundsystemwithjavaconfig.CompactDisc.playTrack(int)) " + "&& args(trackNumber)")
+    @Pointcut("execution(* stereosystem.soundsystemwithjavaconfig.CompactDisc.playTrack(int)) && args(trackNumber)")
     public void trackPlayed(int trackNumber) {}
 
     @Before("trackPlayed(trackNumber)")
