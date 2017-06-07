@@ -8,13 +8,18 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 /**
  * Created by luosf on 2017/5/27.
  */
-@Configuration
+//@Configuration
 @EnableAspectJAutoProxy
-@ComponentScan
+//@ComponentScan
 public class ConcertConfig {
 
     @Bean
     public Audience audience() {
         return new Audience();
+    }
+
+    @Bean
+    public Performance performanceImpl() {
+        return new PerformanceImpl();
     }
 }
