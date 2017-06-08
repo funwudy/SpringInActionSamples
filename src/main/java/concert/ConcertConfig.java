@@ -22,4 +22,9 @@ public class ConcertConfig {
     public Performance performanceImpl() {
         return new PerformanceImpl();
     }
+
+    @Bean
+    public EncoreableIntroducer introducer() {
+        return new EncoreableIntroducer();
+    }
 }

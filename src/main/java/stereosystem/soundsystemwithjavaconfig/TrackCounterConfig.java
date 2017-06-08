@@ -14,7 +14,7 @@ import java.util.List;
 @EnableAspectJAutoProxy
 public class TrackCounterConfig {
 
-    @Bean
+    @Bean(name = "sgt")
     public CompactDisc sgtPeppers() {
         BlankDisc cd = new BlankDisc();
         cd.setTitle("Sgt. Pepper's Lonely Hearts Club Band");

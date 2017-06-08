@@ -13,5 +13,7 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(ConcertConfig.class);
         Performance performance = (Performance) context.getBean("performanceImpl");
         performance.perform();
+
+        ((Encoreable) performance).performEncore();
     }
 }

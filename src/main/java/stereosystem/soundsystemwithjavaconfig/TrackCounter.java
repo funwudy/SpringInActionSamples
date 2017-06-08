@@ -22,6 +22,7 @@ public class TrackCounter {
     public void countTrack(int trackNumber) {
         int currentCount = getPlayCount(trackNumber);
         trackCounts.put(trackNumber, currentCount + 1);
+        System.out.println("Track " + trackNumber + " has been played for " + trackCounts.get(trackNumber) + " times");
     }
 
     public int getPlayCount(int trackNumber) {
